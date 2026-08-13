@@ -3,227 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>My Autobiography — Raycee Ivan Geronimo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #121212, #333333);
+            color: #f0f0f0;
+            min-height: 100vh;
+            padding: 40px 25px;
+            line-height: 1.7;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #b8b8b8;
+            font-size: 16px;
+        }
+
+        .about-card {
+            background: linear-gradient(90deg, #242424, #3a3a3a);
+            border-radius: 18px;
+            padding: 28px;
+            max-width: 850px;
+            margin: 0 auto 60px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #555;
+            flex-shrink: 0;
+        }
+
+        .about-text h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            color: #ddd;
+        }
+
+        .timeline-section {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .timeline-title {
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #444;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .timeline-block {
+            margin-bottom: 45px;
+            padding-left: 20px;
+            border-left: 3px solid #555;
+        }
+
+        .year-tag {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .timeline-block h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .timeline-block p {
+            font-size: 15px;
+            color: #d5d5d5;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 650px) {
+            .about-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            body {
+                padding: 25px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-        <div class="maincontainer">
-        <div class="col1">
-            <div class="header">
-                <h1>Student Infomation</h1>
-                <input type="button" value="Add"class="button btn-add">
-        </div>
 
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>LastName</th>
-                            <th>FirstName</th>
-                            <th>MiddleName</th>
-                            <th>Gender</th>
-                            <th>Year Level</th>
-                            <th>Section</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Doe</td>
-                        <td>John</td>
-                        <td>Micheal</td>
-                        <td>Male</td>
-                        <td>3rd Year</td>
-                        <td>A</td>
-                        <td>john.doe@example.com</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="col2">
-
-            <div class="col2-header-container">
-                <div class="col2-header">
-                    <h2>Student Information</h2>
-                <p>Select a Student to See Details</p>
-                </div>
-
-                <input type="button" value="Edit" class="button btn-edit">
-                <input type="button" value="Delete" class="button btn-delete">
-            </div>
-            <div class="form-cointainer">
-                <form action="  ">
-                    <div class="textbox">
-                        <input type="text"  name="lastName" required>
-                        <label class="txtbox-label" for="lastName" >
-                            <span class="placeholder">Last Name</span>
-                        </label>
-                    </div>
-                    <div class="textbox">
-                        <input type="text"  name="firstName" required>
-                        <label class="txtbox-label" for="firstName" >
-                            <span class="placeholder">First Name</span>
-                        </label>
-                    </div>
-                    <div class="textbox">
-                        <input type="text"  name="middleName" required>
-                        <label class="txtbox-label" for="middleName" >
-                            <span class="placeholder">Middle Name</span>
-                        </label>
-                    </div>
-                    <div class="textbox">
-                        <input type="text"  name="gender" required>
-                        <label class="txtbox-label" for="gender" >
-                            <span class="placeholder">Gender</span>
-                        </label>
-                    </div>
-                    <div class="textbox">
-                        <input type="text"  name="year-level" required>
-                        <label class="txtbox-label" for="year-level" >
-                            <span class="placeholder">Year Level</span>
-                        </label>
-                    </div>
-                    <div class="textbox">
-                        <input type="text"  name="section" required>
-                        <label class="txtbox-label" for="section" >
-                            <span class="placeholder">Section</span>
-                        </label>
-                    </div>
-                    <div class="textbox">
-                        <input type="text"  name="email" required>
-                        <label class="txtbox-label" for="email" >
-                            <span class="placeholder">Email</span>
-                        </label>
-                    </div>
-                    <div class="class-action-btn-container">
-                        <input type="button" value="Save" class="button btn-save">
-                        <input type="button" value="Cancel" class="button btn-cancel">
-                    </div>
-                </form>
-            </div>
+    <div class="header">
+        <h1>Raycee Ivan Geronimo</h1>
+        <p>Associate in Computer Technology</p>
     </div>
+
+    <div class="about-card">
+        <img src="1786461910566.jpg" alt="My photo" class="profile-img">
+        <div class="about-text">
+            <h2>A Little About Me</h2>
+            <p>Hi, I’m Raycee Ivan — an IT student from Meycauayan, Bulacan. I really enjoy programming, graphic design, and building game projects. I’m just someone who loves learning how things work, figuring out new tech, and turning whatever ideas I have into something real.</p>
+        </div>
+    </div>
+
+    <div class="timeline-section">
+        <h2 class="timeline-title">My Journey & Experiences</h2>
+
+          </div>
+    
+         <div class="timeline-block">
+            <span class="year-tag">2006 — 2013</span>
+            <h3>My Old Life</h3>
+            <p>When I was born, my parents told me they had already faced so many struggles. Even when I was just a baby, I hardly got to see my father because he had to work abroad as an OFW. It was my grandmother and my aunt who took care of me as I grew up. My dad was always leaving for other countries, and back then we lived in a simple house put together with scrap wood and corrugated iron. As I got older, our life and our home slowly got better because of him, and I was able to get the things I wanted. But it wasn’t always easy — I’ve had my share of accidents and hard times. There are days when I feel lazy, and days when I work hard — but none of that ever stopped me. Instead, it made me stronger.
+                Growing up, I learned to dream big for the things I wanted. My parents support me, though there are times when we get angry, don’t see eye to eye, and fight over things. Even so, I keep going toward my dreams. What I really want is to give them a good life, even when we don’t always get along. Now my dad has retired from working abroad, and we’ve started a small business to help with my studies and he also drives a tricycle. It opened my eyes, and now I’m doing my best and working hard. Even when I feel weak and tired, I still keep fighting.</p>
+        </div>
+    </div>
+        
+        
+        <div class="timeline-block">
+            <span class="year-tag">2013 — 2019</span>
+            <h3>My Motivation</h3>
+            <p>I grew up in a simple family we were complete, but I spent a lot of time on my own. My dad works overseas as an OFW, my mom’s a factory worker, and my brother was busy with school. So from around 7 years old, I learned to do things by myself even cooking and managing things at home. It wasn’t bad, it just made me independent early. My family still taught me respect and responsibility, and the people around me neighbors, teachers,  they all guided me too. I slowly built my confidence and learned how to stand on my own. Later on, I got involved in church, and that taught me how to be grateful and value myself more. All those experiences being alone, being guided, sharing what I’ve been through they all helped me grow up and understand how to live simply and peacefully.</p>
+        </div>
+
+        <div class="timeline-block">
+            <span class="year-tag">2022 — 2026</span>
+            <h3>School & My IT Journey</h3>
+            <p>Right now I’m studying Information Technology. I chose this because I’ve always been curious about computers how to build programs, how to fix them, how everything actually works. One day I hope to be a game developer. Honestly, it hasn’t been easy. I’m the type of person who takes things slower I need more time to really get things and sometimes I feel the pressure or doubt if I’ll finish all my projects on time. But I never stopped trying. I push myself to keep up, even when it’s hard. And I’m really lucky my classmates and my professors are so patient with me. They help me, explain things, encourage me. Because of them, I’m starting to believe I actually can do this. I’m still learning, still trying, and I won’t give up.</p>
+        </div>
+    </div>
+    
 </body>
 </html>
