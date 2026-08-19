@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/    style.css">
+    <link rel="stylesheet" href="assets/css/    style.css">
     <title>Document</title>
     <title>My Autobiography — Raycee Ivan Geronimo</title>
     <style>
@@ -57,6 +57,7 @@
             object-fit: cover;
             border: 3px solid #555;
             flex-shrink: 0;
+           
         }
 
         .about-text h2 {
@@ -75,7 +76,7 @@
             margin: 0 auto;
         }
 
-        .timeline-title {
+        .timeline-title {              
             font-size: 23px;
             text-align: center;
             margin-bottom: 40px;
@@ -90,8 +91,8 @@
             padding-left: 20px;
             border-left: 3px solid #555;
         }
-
-        .year-tag {
+                
+          .year-tag {
             display: inline-block;
             background: #2a2a2a;
             padding: 4px 16px;
@@ -100,7 +101,11 @@
             font-weight: 600;
             color: #ccc;
             margin-bottom: 10px;
-        }
+          }
+         }
+          
+        
+         
 
         .timeline-block h3 {
             font-size: 18px;
@@ -111,7 +116,12 @@
         .timeline-block p {
             font-size: 15px;
             color: #d5d5d5;
-            line-height: 1.8;
+            line-height: 1.;
+        }
+        
+       .timeline-block {
+            max-width: 850px;
+            margin: 0 auto;
         }
 
         @media (max-width: 650px) {
@@ -121,7 +131,86 @@
             }
             body {
                 padding: 25px 15px;
+                
             }
+           
+        }
+        
+       
+        .projects-section {
+            max-width: 850 px;
+            margin: 0 auto 60px;
+        }
+        .projects-title {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 25px 15px;
+            border-radius: 20px;
+            font-size: 23px;
+            font-weight: 600;
+            color: #ccc;
+            margin-bottom: 60px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 5px;
+        }
+        .project-card {
+            background: linear-gradient(90deg, #242424, #3a3a3a);
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        .project-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .project-card p {
+            color: #ddd;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        .project-links a {
+            color: #99ccff;
+            text-decoration: none;
+            margin-right: 12px;
+            font-size: 0.9rem;
+        }
+        .skills-section, .contact-section {
+            max-width: 850px;
+            margin: 0 auto 60px;
+        }
+        .skills-title, .contact-title {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 23px;
+            font-weight: 600;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .skills-box {
+            background: linear-gradient(90deg, #242424, #3a3a3a);
+            border-radius: 18px;
+            padding: 25px;
+            color: #ddd;
+            line-height: 1.8;
+        }
+        .contact-box {
+            background: linear-gradient(90deg, #242424, #3a3a3a);
+            border-radius: 18px;
+            padding: 25px;
+        }
+        .contact-box p {
+            margin: 10px 0;
+            color: #ddd;
+        }
+        .contact-box a {
+            color: #99ccff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -133,7 +222,7 @@
     </div>
 
     <div class="about-card">
-        <img src="1786461910566.jpg" alt="My photo" class="profile-img">
+        <img src="1786461910566.jpg" class="profile-img"/>
         <div class="about-text">
             <h2>A Little About Me</h2>
             <p>Hi, I’m Raycee Ivan — an IT student from Meycauayan, Bulacan. I really enjoy programming, graphic design, and building game projects. I’m just someone who loves learning how things work, figuring out new tech, and turning whatever ideas I have into something real.</p>
@@ -142,19 +231,14 @@
 
     <div class="timeline-section">
         <h2 class="timeline-title">My Journey & Experiences</h2>
-
-          </div>
-    
-         <div class="timeline-block">
+        <div class="timeline-block">
             <span class="year-tag">2006 — 2013</span>
             <h3>My Old Life</h3>
-            <p>When I was born, my parents told me they had already faced so many struggles. Even when I was just a baby, I hardly got to see my father because he had to work abroad as an OFW. It was my grandmother and my aunt who took care of me as I grew up. My dad was always leaving for other countries, and back then we lived in a simple house put together with scrap wood and corrugated iron. As I got older, our life and our home slowly got better because of him, and I was able to get the things I wanted. But it wasn’t always easy — I’ve had my share of accidents and hard times. There are days when I feel lazy, and days when I work hard — but none of that ever stopped me. Instead, it made me stronger.
-                Growing up, I learned to dream big for the things I wanted. My parents support me, though there are times when we get angry, don’t see eye to eye, and fight over things. Even so, I keep going toward my dreams. What I really want is to give them a good life, even when we don’t always get along. Now my dad has retired from working abroad, and we’ve started a small business to help with my studies and he also drives a tricycle. It opened my eyes, and now I’m doing my best and working hard. Even when I feel weak and tired, I still keep fighting.</p>
+            <p>When I was born, my parents told me they had already faced so many struggles. Even when I was just a baby, I hardly got to see my father because he had to work abroad as an OFW. It was my grandmother and my aunt who took care of me as I grew up. My dad was always leaving for other countries, and back then we lived in a simple house put together with scrap wood and corrugated iron. As I got older, our life and our home slowly got better because of him, and I was able to get the things I wanted. But it wasn’t always easy — I’ve had my share of accidents and hard times. There are days when I feel lazy, and days when I work hard</p>
         </div>
     </div>
-        
-        
-        <div class="timeline-block">
+
+    <div class="timeline-block">
             <span class="year-tag">2013 — 2019</span>
             <h3>My Motivation</h3>
             <p>I grew up in a simple family we were complete, but I spent a lot of time on my own. My dad works overseas as an OFW, my mom’s a factory worker, and my brother was busy with school. So from around 7 years old, I learned to do things by myself even cooking and managing things at home. It wasn’t bad, it just made me independent early. My family still taught me respect and responsibility, and the people around me neighbors, teachers,  they all guided me too. I slowly built my confidence and learned how to stand on my own. Later on, I got involved in church, and that taught me how to be grateful and value myself more. All those experiences being alone, being guided, sharing what I’ve been through they all helped me grow up and understand how to live simply and peacefully.</p>
@@ -166,6 +250,49 @@
             <p>Right now I’m studying Information Technology. I chose this because I’ve always been curious about computers how to build programs, how to fix them, how everything actually works. One day I hope to be a game developer. Honestly, it hasn’t been easy. I’m the type of person who takes things slower I need more time to really get things and sometimes I feel the pressure or doubt if I’ll finish all my projects on time. But I never stopped trying. I push myself to keep up, even when it’s hard. And I’m really lucky my classmates and my professors are so patient with me. They help me, explain things, encourage me. Because of them, I’m starting to believe I actually can do this. I’m still learning, still trying, and I won’t give up.</p>
         </div>
     </div>
+
+
+    <div class="projects-section">
+        <h2 class="projects-title">Selected Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project Title:Event Ticketing Platform</h3>
+                <p> I built this full web-based system to make selling tickets and running events way easier for organizers. From designing the interface and coding it up with HTML, CSS, and basic JavaScript, to adding real-time sales tracking, secure payment options, and QR code ticket generation I handled every part. I also tested it over and over to fix kinks and make sure it’s smooth and straightforward for everyone using it.</p>
+                <div class="project-links">
+                    <a href="#">View More</a> · <a href="#">Reference</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>This is my own portfolio site the one you’re looking at right now! I put it together to show my projects, skills, and background all in one place. I went for a clean, modern dark theme that works just as well on phones as it does on computers. It’s been great practice for me getting better at layout design, responsive styling, and making things feel simple and welcoming.</p>
+                <div class="project-links">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
+    <div class="skills-section">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-box"          
+            Design: Graphic Design<br>         
+            Sports: Basketball, Baseball<br>
+            Tools: Visual Studio, HTML Editor, Code Block<br>
+            Skills: Teamwork, Creativity, Commuication, Time Management
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mail:r.geronimo.csn@gmail.com">r.geronimo.csn@gmail.com</a></p>
+             <p><strong>Contact #:</strong> <a href="09757937691">09757937691</a></p>
+            <p><strong>Social:</strong> <a href="#">Facebook</a> · <a href="#">Instagram</a></p>
+        </div>
+    </div>
+
 </body>
 </html>
+
+            
